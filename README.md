@@ -6,9 +6,10 @@ confusion, and fear from live video feed through a webcam.
 ## Description 💻
 The project has two main parts:
 1. Training, loading and testing an emotion recognition model using TensorFlow and Keras
-2. Applying the model to real-time video from a webcam using OpenCV \
-The model is a deep neural network trained on the FER-2013 emotion dataset. It achieves 65% validation accuracy in recognizing the 5 emotions. \
-The real-time emotion recognition system captures video from a webcam, extracts faces using OpenCV, predicts the emotion using the trained model, and displays it
+2. Applying the model to real-time video from a webcam using OpenCV
+
+The model is a deep neural network trained on the FER-2013 emotion dataset. It achieves 65% validation accuracy in recognizing the 5 emotions. The real-time
+emotion recognition system captures video from a webcam, extracts faces using OpenCV, predicts the emotion using the trained model, and displays it
 overlayed on top of the video frame. 
 
 ## Getting Started 🚀
