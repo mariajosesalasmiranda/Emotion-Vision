@@ -9,7 +9,7 @@ The project has two main parts:
 2. Applying the model to real-time video from a webcam using OpenCV \
 The model is a deep neural network trained on the FER-2013 emotion dataset. It achieves 65% validation accuracy in recognizing the 5 emotions. \
 The real-time emotion recognition system captures video from a webcam, extracts faces using OpenCV, predicts the emotion using the trained model, and displays it
-overlayed on top of the video frame.
+overlayed on top of the video frame. 
 
 ## Getting Started 🚀
 ### Depencies
