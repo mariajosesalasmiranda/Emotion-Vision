@@ -2,7 +2,7 @@
 ## Overview 
 
 > [!Note]
-> This project was created as a simple example for learning purposes.
+>  This repository is primarily for educational purposes
 
 ## Description 
 The project has two main parts:
