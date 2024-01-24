@@ -18,19 +18,9 @@ overlayed on top of the video frame.
 - **train_model.ipynb**: Jupyter Notebook containing the code to train and evaluate the emotion recognition model.
 - **emotion_recognition.py**: Python script to perform live emotion recognition on video using OpenCV and the trained model.
 - **requirements.txt**: List of dependencies needed to run the project, which are:
-  - OpenCV
-  - TensorFLow
-  - Numpy
-  - MatplotLib  
-- **happy.jpeg**: Example image for analysis. sentiment
+- **archive**: The dataset dowload from ... FER2013
 - **haarcascade_frontalface_default.xml**: XML file used for face detection with OpenCV's cascade classifiers.
 - **LICENSE**: License file.
-
-### Depencies
-- OpenCV
-- TensorFlow 2.15.0
-- Numpy
-- Matplotlib
 
 ### Installation
 - Clone the repository:
@@ -51,9 +41,3 @@ Run **emotion_recognition.py** to start the live emotion recognition from your w
 
 ## License 
 This project is licensed under the MIT License. It is intended for educational purposes and personal use. For any commercial use or redistribution, please refer to the terms mentioned in the license file.
-
-## Contribution 
-Contributions are welcome! Feel free to open issues or pull requests for any improvements or bug fixes. 
-
-## Acknowledgments 
-Special thanks to [mention_any_contributors_or_references] for their valuable insights and contributions to this project.
