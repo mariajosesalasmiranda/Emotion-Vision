@@ -37,7 +37,7 @@ if not cap.isOpened():
 
 while True:
     ret, frame = cap.read()
-    faceCascade = cv2.cascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+    faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     faces = faceCascade.detectMultiScale(gray, 1.1, 4)
     for x,y,w,h in faces:
@@ -50,7 +50,6 @@ while True:
         else:
             for (ex,ey,ew,eh) in facess:
                 face_roi = roi_color[ey:ey+eh,ex:ex+ew]
-
     final_image = cv2.resize(face_roi,(224,224))
     final_image = np.expand_dims(final_image, axis=0) # need fourth dimension
     final_image = final_image/255.0 
@@ -67,4 +66,70 @@ while True:
 
         x1,y1,w1,h1 = 0,0,175,75
         cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
-        cv2.putText(frame)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+    
+    elif (np.argmax(Predictions)==1):
+        status = "Disgust"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    elif (np.argmax(Predictions)==1):
+        status = "Fear"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    elif (np.argmax(Predictions)==1):
+        status = "Happy"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    elif (np.argmax(Predictions)==1):
+        status = "Neutral"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    elif (np.argmax(Predictions)==1):
+        status = "Sad"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    else:
+        status = "Surprise"
+
+        x1,y1,w1,h1 = 0,0,175,75
+        cv2.rectangle(frame,(x1,x1), (x1+w1,y1+h1), (0,0,0), -1)
+        cv2.putText(frame, status, (x1 + int(w1/10),y1 + int(h1/2)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255),2)
+        cv2.putText(frame, status, (100,150), font, 3, (0,0,255),2,cv2.LINE_4)
+        cv2.rectangle(frame,(x,y),(x+w,y+h), (0,0,255))
+
+    cv2.imshow("Face Emotion Recognition",frame)
+    if cv2.waitKey(2) & 0xFF == ord('q'):
+        break
+
+cap.release()
+cv2.destroyAllWindows()
+
+
+
