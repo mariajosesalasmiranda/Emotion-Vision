@@ -1,10 +1,5 @@
 # Emotion Recognition with Python
 ## Overview 
-
-> [!Note]
->  This repository is primarily for educational purposes
-
-## Description 
 The project has two main parts:
 1. Training, loading and testing an emotion recognition model using TensorFlow and Keras
 2. Applying the model to real-time video from a webcam using OpenCV
@@ -20,7 +15,6 @@ overlayed on top of the video frame.
 - **requirements.txt**: List of dependencies needed to run the project, which are:
 - **archive**: The dataset dowload from ... FER2013
 - **haarcascade_frontalface_default.xml**: XML file used for face detection with OpenCV's cascade classifiers.
-- **LICENSE**: License file.
 
 ### Installation
 - Clone the repository:
@@ -41,3 +35,8 @@ Run **emotion_recognition.py** to start the live emotion recognition from your w
 
 ## License 
 This project is licensed under the MIT License. It is intended for educational purposes and personal use. For any commercial use or redistribution, please refer to the terms mentioned in the license file.
+
+---
+
+> [!Note]
+>  This repository is primarily for educational purposes
