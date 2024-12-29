@@ -8,7 +8,7 @@ The model is a deep neural network trained on the FER-2013 emotion dataset. It a
 emotion recognition system captures video from a webcam, extracts faces using OpenCV, predicts the emotion using the trained model, and displays it
 overlayed on top of the video frame. 
 
-## Getting Started 
+## Getting Started
 ### Contents
 - **train_model.ipynb**: Jupyter Notebook containing the code to train and evaluate the emotion recognition model.
 - **emotion_recognition.py**: Python script to perform live emotion recognition on video using OpenCV and the trained model.
