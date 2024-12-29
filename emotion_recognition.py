@@ -1,4 +1,5 @@
 # Import the necessries libraries
+from curses.panel import new_panel
 import cv2
 import numpy as np
 
@@ -56,7 +57,7 @@ while True:
 
     font = cv2.FONT_HERSHEY_SIMPLEX
 
-    Predictions = new_model.predict(final_image)
+    Predictions = new_panel.predict(final_image)
 
     font_scale = 1.5
     font = cv2.FONT_HERSHEY_PLAIN
