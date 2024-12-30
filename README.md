@@ -1,4 +1,5 @@
 # Face Emotion Recognition Using DeepFace and TensorFlow
+![facegif](https://miro.medium.com/v2/resize:fit:640/format:webp/1*4Tr0FOsdUgkF32T3mdu6pg.gif)
 ## Overview 
 This project contains two implementations of a face emotion recognition system using two different approaches:
 1. **DeepFace**: A high-level library for deep learning-based face analysis.
@@ -30,9 +31,9 @@ Alternatively, you can install the individual packages manually:
 pip install tensorflow deepface opencv-python numpy matplotlib
 ```
 3. Download the FER-2013 dataset
-The FER-2013 dataset is required for the TensorFlow-based emotion recognition model. You can download the dataset from [Kaggle](!https://www.kaggle.com/datasets/msambare/fer2013)
+The FER-2013 dataset is required for the TensorFlow-based emotion recognition model. You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/msambare/fer2013)
 4.  Download Haar Cascade XML for face detection
-The ```haarcascade_frontalface_default.xml``` file is required for face detection using OpenCV. You can download it from the official [OpenCV repository](!https://github.com/kipr/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml).
+The ```haarcascade_frontalface_default.xml``` file is required for face detection using OpenCV. You can download it from the official [OpenCV repository](https://github.com/kipr/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml).
 
 ### Usage
 1. Run the Notebooks
@@ -54,10 +55,11 @@ The images can be loaded into the notebooks to see how the models classify emoti
 This project is licensed under the MIT License. It is intended for educational purposes and personal use. For any commercial use or redistribution, please refer to the terms mentioned in the license file.
 
 ## Acknowledgments
-- [Kaggle](!https://www.kaggle.com/)
-- [DeepLearning_by_PhDScholar](!https://www.youtube.com/@deeplearning_by_phdscholar6925)
-- [Challenges in representation learning: A report on three machine learning contests](!https://www.sciencedirect.com/science/article/abs/pii/S0893608014002159)
-- [Human Emotion Recognition: Review of Sensors and Methods](!https://www.mdpi.com/1424-8220/20/3/592)
+- [Kaggle](https://www.kaggle.com/)
+- [DeepLearning_by_PhDScholar](https://www.youtube.com/@deeplearning_by_phdscholar6925)
+- [Challenges in representation learning: A report on three machine learning contests](https://www.sciencedirect.com/science/article/abs/pii/S0893608014002159)
+- [Human Emotion Recognition: Review of Sensors and Methods](https://www.mdpi.com/1424-8220/20/3/592)
+- [Facial Expression Recognition Based on TensorFlow Platform](https://www.researchgate.net/publication/319487998_Facial_Expression_Recognition_Based_on_TensorFlow_Platform)
 ---
 
 > [!Note]
