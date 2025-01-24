@@ -4,17 +4,18 @@
 This project contains two implementations of a face emotion recognition system using two different approaches:
 1. **DeepFace**: A high-level library for deep learning-based face analysis.
 2. **TensorFlow** and **FER-2013 dataset**: A custom model built using TensorFlow and trained on the FER-2013 dataset.
+
 Both implementations include a live demo using **OpenCV** to detect and classify emotions in real-time from webcam input.
 
 ## Getting Started 
 ### Contents
-- ```deepface_fer.ipynb```: Jupyter notebook using DeepFace for emotion recognition.
-- ```tensorflow_fer.ipynb```: Jupyter notebook using TensorFlow with a custom-trained model on the FER-2013 dataset.
-- ```emotion_recognition_model.h5```: Trained model file for the TensorFlow approach.
-- ```haarcascade_frontalface_default.xml```: Haar Cascade classifier for face detection.
-- ```happy.jpg```, ```sad.jpg```, ```surprise.jpeg```: Sample images for testing emotion recognition.
-- ```requirements.txt```: List of Python dependencies required to run the project.
-- ```LICENSE```: The license for this project.
+- ```deepface_fer.ipynb```: jupyter notebook using DeepFace for emotion recognition
+- ```tensorflow_fer.ipynb```: jupyter notebook using TensorFlow with a custom-trained model on the FER-2013 dataset
+- ```emotion_recognition_model.h5```: trained model file for the TensorFlow approach
+- ```haarcascade_frontalface_default.xml```: haar cascade classifier for face detection
+- ```happy.jpg```, ```sad.jpg```, ```surprise.jpeg```: sample images for testing emotion recognition
+- ```requirements.txt```: list of Python dependencies required to run the project
+- ```LICENSE```: the license for this project
 
 ### Installation
 1. Clone the repository:
@@ -37,7 +38,7 @@ The ```haarcascade_frontalface_default.xml``` file is required for face detectio
 
 ### Usage
 1. Run the Notebooks
-You can run the notebooks directly in **VS Code** or any other Jupyter notebook environment.
+You can run the notebooks directly in **VS Code** or any other Jupyter notebook environment:
     - For DeepFace-based emotion recognition, open and ```run deepface_fer.ipynb```
     - For the TensorFlow-based emotion recognition, open and run ```tensorflow_fer.ipynb```
 2. Live Demo
